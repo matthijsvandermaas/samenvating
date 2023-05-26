@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@100&display=swap');
+
+/*Koppel het CSS-bestand aan `index.html` (<link rel="stylesheet" type="text/css" href="../.css");
+- [ ] Zet alvast drie semantische elementen (`<header>`-, `<main>`- en `<footer>`) klaar in de body van het
+                                                                                   HTML-bestand, zodat het duidelijk is hoe de pagina in stukjes verdeeld gaat worden;
+- [ ] Voorzie jouw CSS-bestand van een complete CSS-reset;*/
+/**/
+/*=ctrl /
+      ctr f voor zoeken in css
+      id (#) kan 1 keer voor komen
+      class (.) meerdere
+      browser - inspecteren/tijdelijke aanpassing code
+      px altijd deelbaar door 4
+            element selecteren zie stijlen:  aan uit zetten
+                                             stijlen/nieuwe stijlen testen*/
+/*/////
+Table of Contents:
+    1. Global Styles
+        1.1 variable styles
+    2. Typografie
+    3. utility
+    4. Areas
+        4.1 Header
+        4.2 Testimonial
+        4.3 Support
+        4.4 Faq
+        4.5 Footer
+/////*/
+/*kleur selectie
+grijs #899CA0
+donkergroen #1C2B32
+*/
+
+
+/*///1. Global Styles///*/
+/*om basis opmaak van HTML op te heven*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: forestgreen; /*opvallende kleur*/
+    font size: 16px; /*is de standaard van "em"*/
+}
+
+/*///1.1 variable styles///*/
+
+/*///2. Typography///*/
+h1, h2, h3, h4, h5, h6, div, span, {
+    font-family: Georgia, serif, "Times New Roman", Times, serif;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 1.5em; /*16px is de standaard van "em"*/
+}
+
+p,
+block,
+link,
+label,
+fieldset,
+section,
+input,
+select,
+textarea,
+option,
+legend,
+table,
+tfoot,
+thead,
+tr,
+th {
+    font-family: Georgia, serif, "Times New Roman", Times, serif;
+}
+
+/*///3. utility///*/
+.spacing-margin-top { /*class*/
+    margin-top: 16px; /*of gab*/
+}
+.spacing-margin-bottom { /*class*/
+    margin-bottom: 16px; /*of gab*/
+}
+.spacing-margin-left { /*class*/
+    margin-left: 16px; /*of gab*/
+}
+.spacing-margin-right { /*class*/
+    margin-right: 16px; /*of gab*/
+}
+.spacing-margin { /*class*/
+    margin: 16px; /*of gab*/
+    margin: 10px 20px ; /*(vert-hor) of gab*/
+    margin: 10px 20px 10px 20px ; /*(boven-recht-onder-links) of gab*/
+}
+.spacing-padding-top { /*class*/
+    padding-top: 16px; /*of gab*/
+}
+.spacing-padding-bottom { /*class*/
+    padding-bottom: 16px; /*of gab*/
+}
+.spacing-padding-left { /*class*/
+    padding-left: 16px; /*of gab*/
+}
+.spacing-padding-right { /*class*/
+    padding-right: 16px; /*of gab*/
+}
+.spacing-padding { /*class*/
+    padding: 16px; /*of gab*/
+    padding: 10px 20px ; /*(vert-hor) of gab*/
+    padding: 10px 20px 10px 20px ; /*(boven-recht-onder-links) of gab*/
+.debug {
+/ /*<element>class=""debug"*/
+border-style: 2 px solid red;
+}
+
+/*///4. Areas///*/
+footer {
+    margin: 2em;
+
+}
+
+fieldset {
+    background-color: white;
+    padding: 1px;
+    border: 1px, solid black;
+    border-radius: 8px;
+    width: 100%;
+}
+
+fieldset legend { /* "<" decendent*/
+    background-color: black;
+    color: white;
+    padding: 4px 12px; /**/
+    border: 1px, solid black;
+    border-radius: 4px;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px, 16px; /**/
+}
+
+button-primary { /*class="button button-primary"*/
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    box-shadow: inset 0 0 2px black;
+    padding: 4px, 16px; /**/
+}
+
+button + button { /*als item 2 is cibeling van item 1 dan */
+    margin-left: 16px;
+}
+
+inpute {
+    width: 100%;
+    display: block /inline/ 100%; /*ipv flexbox*/
+}
+
+/*///4.1 Header///*/
+
+
+/*/// 4.2 Testimonial///*/
+
+
+/*///4.3 Support///*/
+
+
+/*///4.4 Faq///*/
+
+
+/*///4.5 Footer///*/
